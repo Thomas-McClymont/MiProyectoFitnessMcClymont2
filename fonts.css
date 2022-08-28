@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?18ljrm');
+  src:  url('fonts/icomoon.eot?18ljrm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?18ljrm') format('truetype'),
+    url('fonts/icomoon.woff?18ljrm') format('woff'),
+    url('fonts/icomoon.svg?18ljrm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+  content: "\e902";
+}
+.icon-question:before {
+  content: "\e900";
+}
+.icon-home:before {
+  content: "\e901";
+}
+.icon-file-text:before {
+  content: "\e922";
+}
+.icon-folder-open:before {
+  content: "\e930";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}

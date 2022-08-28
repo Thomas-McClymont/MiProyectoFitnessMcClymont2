@@ -1,0 +1,423 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+#grid{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1250px 150px;
+}
+
+.header{
+grid-area: header;
+background-color: rgb(88, 88, 88);
+width: 100%;
+}
+
+.header__h3{
+    display: none;
+}
+
+#navigation{
+    margin: 20px auto;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+    width: 80%;
+    height: 100%;
+    margin: 35px auto;
+    position: absolute;
+    background-color: rgb(88, 88, 88); 
+    overflow: hidden;
+    transition: height 1s ease;
+    z-index: 2;
+}
+
+.nav-items li{
+    list-style-type: none;
+    display: block;
+    border-bottom: 1px solid #ffffff;
+    padding: 15px; 
+}
+
+.nav-items li a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+    
+.nav-items li a:hover{
+background-color: #7b7b7b;
+}
+
+.nav-items li span{
+    margin-right: 10px;
+}
+
+.control-menu{
+    position: absolute;
+    top: 30px;
+    padding-left: 15px;
+}
+
+.control-menu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.icon-menu{
+    margin-right: 10px;
+}
+
+ul.nav-items{
+    height: 0;
+    overflow: hidden;
+}
+
+#navigation:target .nav-items{
+    height: 100%;
+    transition: height 1s ease;
+}
+
+.close{
+    display: none;
+}
+
+#navigation:target .open{
+    display: none;
+}
+
+#navigation:target .close{
+    display: block;
+}
+
+.logo{
+     height: 30px;
+     width: 30px;
+     display: none;
+}
+
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "introduction introduction introduction introduction"
+    "options options options options"
+    "more-information more-information more-information more-information";
+    grid-template-columns: 1fr;
+    grid-template-rows: 800px 200px 250px;
+}
+
+#introduction{
+    grid-area: introduction;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    height:100vh;
+}
+
+#introduction h1{
+   color: #F5F1ED;
+   font-family:'Nunito Sans', sans-serif;
+   font-weight: bold;
+   font-size: 30px;
+   width: 300px;
+   position: relative;
+   top: 15%;
+   text-align: right;
+   
+}
+
+#introduction article{
+    color: #F5F1ED;
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 16px;
+    width: 300px;
+    position: relative;
+    top: 15%;
+    text-align: right;
+    margin: 15px 0px;
+ }
+
+#introduction article p{
+    margin: 10px 0px;
+}
+
+#options{
+    grid-area: options;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#options article{
+   background-color: #A99985;
+   width: 100px;
+   height: 100px;
+   padding: 0px 5px;
+   margin: 0px 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+#more-information{
+    grid-area: more-information;
+    background-color: rgb(43, 43, 43);
+}
+
+#more-information article{
+    position: relative;
+    left: 85px;
+    top: 50px;
+    color:#ffffff;
+    font-size: 12px;
+    text-align: justify;
+    width: 200px;
+    padding: 10px;
+
+}
+
+#more-information form{
+    position: relative;
+    top: 10px;
+}
+
+#more-information form input{
+    font-size: 10px;
+    background-color: #A99985;
+    color: #F5F1ED;
+}
+
+.footer img {
+    height: 60px;
+    margin: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .div-footer {
+    background-color: #c7b281;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .div-footer li{
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+
+  }
+
+  .div-footer li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  .p-copyright {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: small;
+    padding-bottom: 20px;
+  }
+
+@media only screen and (min-width:768px) {
+    #grid{
+        display: grid;
+        grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 1700px 150px;
+    }
+    .header{
+        grid-area: header;
+        }
+        .header__h3{
+            display: flex;
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            font-size: 22px;
+
+        }
+        .nav-items{
+            display: flex;
+            flex-direction: row;
+            justify-content: center; 
+            position: relative;
+            bottom: 30px;
+            border-bottom:none;
+        }
+        .nav-items li{
+            z-index: 3;
+        }
+        .nav-items li a{
+            font-size: 18px;
+        }
+        .control-menu{
+            display: none;
+        }
+        .main{
+            grid-area: main;
+            display: grid;
+            grid-template-areas: 
+            "introduction introduction introduction introduction"
+            "options options options options"
+            "more-information more-information more-information more-information";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1150px 200px 350px;
+        }
+        #introduction{
+            grid-area: introduction;
+        }
+        #introduction h1{
+            font-size: 50px;
+            width: 500px;
+            position: relative;
+            left: 100px;   
+         }
+         
+         #introduction article{
+             font-size: 22px;
+             width: 500px;
+             left: 100px;
+          }
+         
+        #options{
+            grid-area: options;
+        }
+        #options article{
+            background-color: #A99985;
+            width: 150px;
+            height: 150px;
+            padding: 0px 10px;
+            margin: 0px 15px;
+            top: 15px;
+            font-size: 22px;
+         }
+        #more-information{
+            grid-area: more-information;
+        }
+        
+        #more-information article{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            justify-content: center;  
+            color:white;
+            font-size: 18px;
+            text-align: justify;
+            width: 400px;
+            padding: 10px;
+        
+        }
+        
+}
+@media only screen and (min-width:1024px) {
+    #grid{
+        display: grid;
+        grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1600px 200px;
+    }
+    .header{
+        grid-area: header;
+        }
+        .header__h3{
+            display: flex;
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            font-size: 22px;
+
+        }
+        .nav-items{
+            display: flex;
+            flex-direction: row;
+            justify-content: center; 
+            position: relative;
+            bottom: 30px;
+            border-bottom:none;
+        }
+        .nav-items li a{
+            font-size: 18px;
+        }
+        .control-menu{
+            display: none;
+        }
+        .main{
+            grid-area: main;
+            display: grid;
+            grid-template-areas: 
+            "introduction introduction introduction introduction"
+            "options options options options"
+            "more-information more-information more-information more-information";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1000px 150px 450px;
+        }
+        #introduction{
+            grid-area: introduction;
+            background-size: 100vw 100vh;
+        }
+        #introduction h1{
+            font-size: 70px;
+            width: 700px;
+            position: relative; 
+            left: 100px;  
+         }
+         
+         #introduction article{
+             font-size: 30px;
+             width: 600px;
+             left: 200px;
+          }
+         
+        #options{
+            grid-area: options;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: flex-end;
+        }
+        #options article{
+            margin-bottom: 125px;
+            font-size: 22px;
+         }
+        #more-information{
+            grid-area: more-information;
+        }
+        
+        #more-information article{
+            font-size: 18px;
+            width: 600px;
+            margin-left: 500px;
+            margin-top: 80px;
+        
+        }
+    }
