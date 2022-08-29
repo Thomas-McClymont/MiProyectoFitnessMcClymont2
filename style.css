@@ -409,6 +409,12 @@ ul.nav-items{
             margin-bottom: 125px;
             font-size: 22px;
          }
+
+         #options :hover{
+            transition: all 2s ease;
+            transform: scale(2,2);
+         }
+
         #more-information{
             grid-area: more-information;
         }
@@ -421,3 +427,4 @@ ul.nav-items{
         
         }
     }
+  
