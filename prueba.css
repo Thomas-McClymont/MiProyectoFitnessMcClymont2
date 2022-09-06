@@ -1,0 +1,107 @@
+.logo{
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+main{
+    margin: 0;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+#informacion{
+    padding: 50px;
+}
+
+#completar{
+    padding: 20px;
+}
+
+.section-1 h1{
+    font-size: 60px;
+    position: relative;
+    margin-top: 40%;
+    left: 30px;
+    text-align: right;
+}
+
+.section-1 article{
+    font-size: 20px;
+    position: relative;
+    text-align: right;
+    margin-top: 30px;
+    left: 20px;
+}
+
+.section-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position:relative;
+    bottom: 6vh;
+    height: 400px;
+}
+
+.section-2 div{
+    text-align: center;
+    width: 450px;
+    height: 280px;
+    background-color: #909090;
+    border-radius: 15px;
+    position: relative;
+    top: 40px;
+}
+
+.section-2 div h2{
+   padding: 20px;
+   font-size: 25px;
+}
+
+
+
+.seccionformulario{
+    margin: 50px;
+}
+
+.footer{
+    background-color:#252323;
+}
+.footer__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer__list li{
+    list-style-type: none;
+}
+
+.footer__list li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0px 5px;
+}
+
+.footer__list li span{
+    color:#ffffff;
+    padding-right: 5px;
+}
+
+.footer p{
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.form-control{
+    margin: 10px;
+}
+
+
+
+
