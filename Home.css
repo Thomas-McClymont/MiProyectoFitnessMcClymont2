@@ -1,0 +1,730 @@
+*{
+    font-family: "Quicksand", sans-serif;
+    
+}
+
+@media only screen and (min-width:1230px){
+    #grid{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "introduccion introduccion"
+        "musculacion crossfit"
+        "spinning nutricion"
+        "footer footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 900px 500px 500px 200px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    
+    header{
+        grid-area: header;
+    }
+
+    /*  */
+    .header {
+        background-color: rgb(88, 88, 88);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .lista {
+        display: inline;
+        padding: 20px;
+        color: white;
+    }
+
+    .header img {
+        height: 100px;
+        padding: 20px;
+    }
+
+    li a {
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+    }
+
+    li :active {
+        color: tomato;
+    }
+
+    li :hover {
+        color: yellowgreen;
+    }
+
+    .header-titulo {
+        color: white;
+        position: absolute;
+        margin-left: 100px;
+    }
+    
+    .header-signin {
+        color: white;
+        background-color: #353535;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 25px;
+        margin-right: 20px;
+    }
+
+    .footer {
+        background-color: #434a42;
+    }
+    
+    .footer img {
+        height: 60px;
+        margin: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .div-footer {
+        background-color: #666666;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .p-copyright {
+        color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        font-size: small;
+        padding-bottom: 20px;
+    }
+    /*  */
+    
+    footer{
+        grid-area: footer;
+    }
+    /* SECTOR INTRODUCCION */
+
+    #introduccion{
+        grid-area: introduccion;
+        display: grid;
+        align-items: center;
+    }
+
+    #contenido-introduccion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    #contenido-frase{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 50;
+        font-weight: bold;
+        color: #984d4d;
+
+    }
+
+    .frase{
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    #blood{
+        color: #ea6161;
+        font-size: 70px;
+    }
+
+    #sweat{
+        color: #4b4a9a;
+        font-size: 70px;
+    }
+
+    #respect{
+        color: rgb(162, 248, 71);
+        font-size: 70PX;
+    }
+
+    #contenedor-checklist{
+        margin: 40px;
+    }
+
+    #online{
+        font-size: 40px;
+    }
+
+    #rutinas{
+        font-size: 40px;
+    }
+
+    #dietas{
+        font-size: 40px;
+    }
+
+    #atencion{
+        font-size: 40px;
+    }
+
+    li :hover {
+        color: yellowgreen;
+    }
+
+    /* SECTOR MUSCULACION */
+    #musculacion{
+        grid-area: musculacion;
+        background-color: rgb(239, 239, 239);
+        display: grid;
+        justify-items: center;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    #titulo-musculacion{
+        font-size: 30px;
+
+    }
+    
+    #foto1{
+        height: 260px;
+        margin-top: 50px;
+        border-radius: 20px;
+
+    }
+    /* FIN SECTOR MUSCULACION */
+
+    /* SECTOR CROSSFIT */
+    #crossfit{
+        grid-area: crossfit;
+        background-color: rgb(149, 149, 149);
+        display: grid;
+        justify-items: center;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    #titulo-crossfit{
+        font-size: 30px;
+
+    }
+    
+    #foto2{
+        height: 260px;
+        margin-top: 50px;
+        border-radius: 20px;
+
+    }
+    /* FIN SECTOR CROSSFIT */
+
+    /* SECTOR SPINNING */
+    #spinning{
+        grid-area: spinning;
+        background-color: rgb(149, 149, 149);
+        display: grid;
+        justify-items: center;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    #titulo-spinning{
+        font-size: 30px;
+
+    }
+    
+    #foto3{
+        height: 260px;
+        margin-top: 50px;
+        border-radius: 20px;
+
+    }
+    /* FIN SECTOR SPINNING */
+
+    /* SECTOR NUTRICION */
+    #nutricion{
+        grid-area: nutricion;
+        background-color: rgb(239, 239, 239);
+        display: grid;
+        justify-items: center;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    #titulo-nutricion{
+        font-size: 30px;
+
+    }
+    
+    #foto4{
+        height: 260px;
+        margin-top: 50px;
+        border-radius: 20px;
+
+    }
+    /* FIN SECTOR NUTRICION */
+
+    
+    .contenidosectores{
+        display: grid;
+        align-self: start;
+
+    }
+    
+    #nutricion{
+        grid-area: nutricion;
+    }
+}
+
+/* MOBILE */
+@media (min-width:900px) and (max-width:1230px){
+    #grid{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "introduccion"
+        "musculacion"
+        "spinning"
+        "footer";
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        /* justify-items: center; */
+    }
+
+    header{
+        grid-area: header;
+    }
+    
+
+
+    /*  */
+    .header {
+        background-color: rgb(88, 88, 88);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .lista {
+        display: inline;
+        padding: 20px;
+        color: white;
+    }
+
+    .header img {
+        height: 100px;
+        padding: 20px;
+    }
+
+    li a {
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+    }
+
+    li :active {
+        color: tomato;
+    }
+
+    li :hover {
+        color: yellowgreen;
+    }
+
+    .header-titulo {
+        color: white;
+        position: absolute;
+        margin-left: 100px;
+    }
+    
+    .header-signin {
+        color: white;
+        background-color: #353535;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    .footer {
+        background-color: #434a42;
+    }
+    
+    .footer img {
+        height: 60px;
+        margin: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .div-footer {
+        background-color: #666666;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .p-copyright {
+        color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        font-size: small;
+        padding-bottom: 20px;
+    }
+    /*  */
+
+    /* SECTOR INTRODUCCION */
+
+    #introduccion{
+        grid-area: introduccion;
+        display: grid;
+        align-items: center;
+    }
+
+    #contenido-introduccion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    #contenido-frase{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 50;
+        font-weight: bold;
+        color: #984d4d;
+
+    }
+
+    .frase{
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    #blood{
+        color: #ea6161;
+        font-size: 70px;
+    }
+
+    #sweat{
+        color: #4b4a9a;
+        font-size: 70px;
+    }
+
+    #respect{
+        color: rgb(162, 248, 71);
+        font-size: 70PX;
+    }
+
+    #contenedor-checklist{
+        margin: 40px;
+    }
+
+    #online{
+        font-size: 40px;
+    }
+
+    #rutinas{
+        font-size: 40px;
+    }
+
+    #dietas{
+        font-size: 40px;
+    }
+
+    #atencion{
+        font-size: 40px;
+    }
+
+    /* FIN SECTOR INTRODUCCION */
+
+    /* FOTOS */
+    #foto1{
+        height: 260px;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+
+    #foto2{
+        height: 260px;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+
+    #foto3{
+        height: 260px;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+
+    #foto4{
+        height: 260px;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+
+    /* SECTORES */
+    .contenidosectores{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /*  */
+
+    /* TITULOS SECTORES */
+    #titulo-musculacion{
+        font-size: 40px;
+        margin: 30px;
+    }
+
+    #titulo-crossfit{
+        font-size: 40px;
+        margin: 30px;
+    }
+
+    #titulo-spinning{
+        font-size: 40px;
+        margin: 30px;
+    }
+
+    #titulo-nutricion{
+        font-size: 40px;
+        margin: 30px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    /* FOTOS */
+    #foto1{
+        height: 260px;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+
+    #foto2{
+        height: 260px;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+
+    #foto3{
+        height: 260px;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+
+    #foto4{
+        height: 260px;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+    /* FIN FOTOS */
+
+    /* SECTOR MUSCULACION */
+    #musculacion{
+        background-color: rgb(239, 239, 239);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    #titulo-musculacion{
+        font-size: 30px;
+
+    }
+    /* FIN SECTOR MUSCULACION */
+
+    /* SECTOR CROSSFIT */
+    #crossfit{
+        background-color: rgb(197, 197, 197);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    #titulo-crossfit{
+        font-size: 30px;
+
+    }
+    /* FIN SECTOR CROSSFIT */
+
+    /* SECTOR SPINNING */
+    #spinning{
+        background-color: rgb(239, 239, 239);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    #titulo-spinning{
+        font-size: 30px;
+
+    }
+    /* FIN SECTOR SPINNING */
+
+    /* SECTOR NUTRICION */
+    #nutricion{
+        background-color: rgb(197, 197, 197);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    #titulo-nutricion{
+        font-size: 30px;
+
+    }
+    /* FIN SECTOR NUTRICION */
+
+    /* INTRODUCCION */
+    #contenido-introduccion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .frase{
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    #blood{
+        color: #ea6161;
+        font-size: 70px;
+    }
+
+    #sweat{
+        color: #4b4a9a;
+        font-size: 70px;
+    }
+
+    #respect{
+        color: rgb(162, 248, 71);
+        font-size: 70PX;
+    }
+
+    #contenedor-checklist{
+        margin: 40px;
+    }
+
+    #online{
+        font-size: 40px;
+    }
+
+    #rutinas{
+        font-size: 40px;
+    }
+
+    #dietas{
+        font-size: 40px;
+    }
+
+    #atencion{
+        font-size: 40px;
+    }
+
+    #contenido-frase{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 50;
+        font-weight: bold;
+        color: #984d4d;
+        margin: 20px;
+
+    }
+
+    /* FOOTER */
+    .footer {
+        background-color: #434a42;
+    }
+    
+    .footer img {
+        height: 60px;
+        margin: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .div-footer {
+        background-color: #666666;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .p-copyright {
+        color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        font-size: small;
+        padding-bottom: 20px;
+    }
+
+    .lista {
+        display: inline;
+        padding: 20px;
+        color: white;
+    }
+    /* FIN FOOTER */
+
+    /* HEADER */
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color:rgb(88, 88, 88) ;
+    }
+
+    .header img {
+        height: 100px;
+        padding: 20px;
+    }
+
+    .header-titulo {
+        color: white;
+        position: absolute;
+        margin-left: 100px;
+    }
+    
+    .header-signin {
+        color: white;
+        background-color: #353535;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    .navegador{
+        visibility: hidden;
+    }
+
+
+
+}
+
+
